@@ -20,11 +20,15 @@ for i in range(trycount):
 
 pi = 4*((hit)/(trycount))
 
+Error = pi - math.pi
 
 print("")
 print("")
-print("trycount =",trycount)
-print("hit      =",hit)
-print("nothit   =",nothit)
-print("Pi       =",pi)
-print("Error    =",abs(pi - math.pi))
+print("trycount   =",trycount)
+print("hit        =",hit)
+print("nothit     =",nothit)
+print("Pi         =",pi)
+print("Error      =",Error)
+print("deviation  =",Error/math.pi*100,"%")
+
+
