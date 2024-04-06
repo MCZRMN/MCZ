@@ -1,5 +1,5 @@
 import random
-
+import math
 
 
 trycount_str = input("Number of attempts")
@@ -9,11 +9,12 @@ hit = 0
 nothit = 0
 
 for i in range(trycount):
-    x = random.random()
-    y = random.random()
-    if (x**2 + y**2)**0.5 <= 1:
+    x = random.uniform(0.0, 1.0)
+    y = random.uniform(0.0, 1.0)
+    #print(f"{x}, {y}")
+    # if (x**2 + y**2)**0.5 <= 1:
+    if (x * x + y * y) <= 1:
         hit += 1
-
     else:
         nothit += 1
 
@@ -26,3 +27,4 @@ print("trycount =",trycount)
 print("hit      =",hit)
 print("nothit   =",nothit)
 print("Pi       =",pi)
+print("Error    =",abs(pi - math.pi))
