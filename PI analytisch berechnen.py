@@ -35,6 +35,8 @@ for i in range(trycount):
 pi = 4*((hit)/(trycount))
 
 Error = pi - math.pi
+deviation = format(Error/math.pi*100,".2f")
+
 
 print("")
 print("")
@@ -43,13 +45,17 @@ print("hit        =",hit)
 print("nothit     =",nothit)
 print("Pi         =",pi)
 print("Error      =",Error)
-print("deviation  =",Error/math.pi*100,"%")
+print("deviation  =",deviation, "%")
 
 #graphic
+graphic = input("Would you like a visualization? Could cause Error if [trycount] is too high ")
 
-plt.plot(nothitx,nothity,color='none',linestyle='dashed',linewidth = 2, marker= 'o', markersize=3,markerfacecolor='red' , markeredgecolor ='red')
-plt.plot(hitx,hity,color='none',linestyle='dashed',linewidth = 2, marker= 'o', markersize=3,markerfacecolor='green' , markeredgecolor ='green')
+if graphic != "yes":
+    print("season closed")
+else:
+    plt.plot(nothitx,nothity,color='none',linestyle='dashed',linewidth = 2, marker= 'o', markersize=3,markerfacecolor='red' , markeredgecolor ='red')
+    plt.plot(hitx,hity,color='none',linestyle='dashed',linewidth = 2, marker= 'o', markersize=3,markerfacecolor='green' , markeredgecolor ='green')
 
-plt.grid()
-plt.show()
+    plt.grid()
+    plt.show()
 
