@@ -4,7 +4,10 @@ import matplotlib.pyplot as plt
 
 
 
-trycount_str = input("Number of attempts")
+print("")
+print("")
+print("Pi is calculated using random numbers")
+trycount_str = input("Number of attempts [the more the more precise]:")
 trycount = int(trycount_str)
 
 hitx    = []
@@ -47,11 +50,17 @@ print("Pi         =",pi)
 print("Error      =",Error)
 print("deviation  =",deviation, "%")
 
-#graphic
-graphic = input("Would you like a visualization? Could cause Error if [trycount] is too high ")
+
+
+
+#graphic:
+
+graphic = input("Would you like a visualization? Could cause Error if [trycount] is too high: ")
 
 if graphic != "yes":
     print("season closed")
+
+
 else:
     plt.plot(nothitx,nothity,color='none',linestyle='dashed',linewidth = 2, marker= 'o', markersize=3,markerfacecolor='red' , markeredgecolor ='red')
     plt.plot(hitx,hity,color='none',linestyle='dashed',linewidth = 2, marker= 'o', markersize=3,markerfacecolor='green' , markeredgecolor ='green')
