@@ -1,21 +1,33 @@
-# Aufgabe 1
+# Summenberechnung
+
+def Varibalenbestimmung():
+
+    a = int(input("Bitte ganze positive Zahl eingeben"))
+    while a<0:
+        a = int(input("Bitte ganze positive Zahl eingeben"))
+
+    s1 = 0
+    s2 = 0
+    return a, s1, s2
 
 
-V1 = 0
+def Berechnung(a, s1, s2):
+    for i in range(1, 11, 2):
 
-for i2 in range(25):
-    V1 += 2
-    print(V1)
+        if a % i == 0:
+            s1 += 1
+        else:
+            s2 += 1
+    return s1, s2
+
+def Ausgabe(s1, s2):
+    print(s1, s2)
 
 
-V2 = 0
+# Hauptprogramm
 
-while V2 != 50:
-    V2 += 2
-    print(V2)
+a,s1,s2 = Varibalenbestimmung()
+s1,s2   = Berechnung(a,s1,s2)
+Ausgabe(s1, s2)
 
-
-V3 = 0
-for i2 in range(5):
-    print(V3+2,V3+4,V3+6,V3+8,V3+10)
-    V3 += 10
+# Programm teilt eingegebene Zahl durch 1,3,5,7,9 wenn ohne rest Teilbar dann s1 += 1 wenn nicht dann s2 += 1
