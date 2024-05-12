@@ -1,6 +1,6 @@
 # Summenberechnung
 
-def Varibalenbestimmung():
+def Variablenbestimmung():
 
     a = int(input("Bitte ganze positive Zahl eingeben"))
     while a<0:
@@ -26,8 +26,8 @@ def Ausgabe(s1, s2):
 
 # Hauptprogramm
 
-a,s1,s2 = Varibalenbestimmung()
-s1,s2   = Berechnung(a,s1,s2)
+a, s1, s2 = Variablenbestimmung()
+s1, s2 = Berechnung(a, s1, s2)
 Ausgabe(s1, s2)
 
 # Programm teilt eingegebene Zahl durch 1,3,5,7,9 wenn ohne rest Teilbar dann s1 += 1 wenn nicht dann s2 += 1
