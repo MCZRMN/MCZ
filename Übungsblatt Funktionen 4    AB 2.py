@@ -1,8 +1,5 @@
 def inteingabe(a, b):
-
-
     interger = int(input(f"Input Number between {a} and {b}"))
-
 
     return interger, a > interger or b < interger, a, b
 
