@@ -49,6 +49,52 @@ def Random7():
     print(temp)
 
 
+def StringtoASCIICode():
+    String = input("String eingeben")
+    Liste = []
+    for i in String:
+        Liste +=[ord(i)]
+    print(Liste)
+
+
+def RandomStats():
+    Liste = []
+    Anzahl = int(input("Anzahl der generierten Zahlen eingeben"))
+# Liste erstellen
+    for i in range(Anzahl):
+        n = random.randint(0,100)
+        Liste += [n]
+
+# Durchscnitt berechnen
+    temp = 0
+    for j in Liste:
+        temp += j
+
+    temp = temp/Anzahl
+
+# Max ausrechenen
+    Max = 0
+    for k in Liste:
+        if k > Max:
+            Max = k
+
+
+# Min ausrechenen
+    Min = 100
+    for l in Liste:
+        if l < Min:
+            Min = l
+
+
+
+
+    print("Entstandende Liste:",Liste)
+    print("Durchschnittlischer Zahlenwert:",temp)
+    print("Min:",Min)
+    print("Max:",Max)
+
+
+
 # Hauptprogramm
 
 #Summe()
@@ -56,5 +102,6 @@ def Random7():
 #CountZero()
 #CountA()
 #Random7()
-
+#StringtoASCIICode()
+RandomStats()
 
