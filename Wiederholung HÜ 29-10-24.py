@@ -97,11 +97,11 @@ def RandomStats():
 
 # Hauptprogramm
 
-#Summe()
-#AusgabeZiffer()
-#CountZero()
-#CountA()
-#Random7()
-#StringtoASCIICode()
+Summe()
+AusgabeZiffer()
+CountZero()
+CountA()
+Random7()
+StringtoASCIICode()
 RandomStats()
 
