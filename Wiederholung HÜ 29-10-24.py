@@ -94,14 +94,23 @@ def RandomStats():
     print("Max:",Max)
 
 
+def Whatsapp():
+    n = input("Gewollter String")
+    for i in range(101):
+        print(i,". ",n)
+
+
+
 
 # Hauptprogramm
 
-Summe()
-AusgabeZiffer()
-CountZero()
-CountA()
-Random7()
-StringtoASCIICode()
-RandomStats()
+#Summe()
+#AusgabeZiffer()
+#CountZero()
+#CountA()
+#Random7()
+#StringtoASCIICode()
+#RandomStats()
+Whatsapp()
+
 
